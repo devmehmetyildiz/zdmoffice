@@ -1,7 +1,5 @@
 import React from 'react'
 import img from '../../assets/img'
-import { faSoap, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
   return (
@@ -20,11 +18,11 @@ export default function About() {
         <div className='flex flex-col w-1/2 lg:w-1/3 justify-center items-center px-8'>
           <h2 className='leading-[1.1] w-[100%] text-center font-Common font-bold text-[#3d3d3d] text-[1.8em] mt-4 lg:mt-0'>our specialization<span className='text-[#c5a47e]'>:</span></h2>
           <div className='mt-4 flex flex-col justify-center items-center'>
-            <img className='mb-4 w-1/4 py-2' src={img.iconArchitecture} />
+            <img className='mb-4 w-1/4 py-2' src={img.iconArchitecture} alt="" />
             <p className='text-[1.125em] leading-[1.35] font-bold text-[#3d3d3d] tracking-[0.2em] font-Common'>ARCHITECTURE</p>
-            <img className='my-4 w-1/4 py-2' src={img.iconInteriors} />
+            <img className='my-4 w-1/4 py-2' src={img.iconInteriors} alt="" />
             <p className='text-[1.125em] leading-[1.35] font-bold text-[#3d3d3d] tracking-[0.2em] font-Common'>INTERIORS</p>
-            <img className='my-4 w-1/4 py-2' src={img.iconPlanning} />
+            <img className='my-4 w-1/4 py-2' src={img.iconPlanning} alt="" />
             <p className='text-[1.125em] leading-[1.35] font-bold text-[#3d3d3d] tracking-[0.2em] font-Common'>PLANING</p>
           </div>
         </div>

@@ -52,14 +52,14 @@ export default function Home() {
       <div className='absolute lg:left-[25%] md:left-[35%] sm:left-[45%] top-[11vmin] w-[60%] flex flex-row justify-between items-center'>
         <p className='font-Common font-light text-[0.75em] tracking-[0.22em] text-[#fff]'>+7 (212) 674-25-10</p>
         <div className=' sm:hidden md:hidden lg:flex flex-row justify-center items-center  font-light text-[0.75em]  cursor-pointer tracking-[0.22em]'>
-          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common'>HOME</a>
-          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common'>ABOUT US</a>
-          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common'>PROJECTS</a>
-          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common'>BLOG</a>
-          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common'>CONTACTS</a>
+          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' href='/'>HOME</a>
+          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' href='/'>ABOUT US</a>
+          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' href='/'>PROJECTS</a>
+          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' href='/'>BLOG</a>
+          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' href='/'>CONTACTS</a>
         </div>
       </div>
-      <img className='w-[100vw]  h-[100vh] left-0 top-0 z-10' src={img.slide1}></img>
+      <img className='w-[100vw]  h-[100vh] left-0 top-0 z-10' src={img.slide1} alt=""></img>
     </div>
   )
 }
