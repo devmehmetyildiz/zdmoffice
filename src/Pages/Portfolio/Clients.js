@@ -28,7 +28,7 @@ export default function Clients() {
         })}
       </div>
       <div className='mt-8 text-[#fff] font-Common font-bold'>
-        <button className='shadow-lg hover:shadow-none shadow-[#c5a47e] rounded-3xl  flex flex-row justify-center items-center px-4 py-4 transition-all ease-in-out duration-1000 bg-[#c5a47e] hover:bg-[#cb9c67]'>WORK TOGETHER
+        <button className='shadow-lg hover:shadow-none shadow-[#c5a47e] rounded-3xl  flex flex-row justify-center items-center px-8 py-[0.8em] transition-all ease-in-out duration-1000 bg-[#c5a47e] hover:bg-[#cb9c67]'>WORK TOGETHER
           <FontAwesomeIcon className=' text-[#fff] text-[2.4vmin]  mr-[2vmin] opacity-25 ml-2' icon={faArrowRight} />
         </button>
       </div>

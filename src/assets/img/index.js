@@ -22,8 +22,10 @@ import slide1 from "./slide1.jpg"
 import slide2 from "./slide2.jpg"
 import slide3 from "./slide3.jpg"
 import zoom from "./zoom.png"
-
-
+import Aboutus from "./Aboutus.jpg"
+import map from "./map.png"
+import projects from "./Projects.jpg"
+import Contact from "./Contact.jpg"
 export default {
     bg,
     client1,
@@ -48,5 +50,9 @@ export default {
     slide1,
     slide2,
     slide3,
-    zoom
+    zoom,
+    Aboutus,
+    map,
+    projects,
+    Contact
 }

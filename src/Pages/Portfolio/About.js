@@ -16,7 +16,7 @@ export default function About() {
             experiental value, building-technical value and economical value.</p>
         </div>
         <div className='flex flex-col w-1/2 lg:w-1/3 justify-center items-center px-8'>
-          <h2 className='leading-[1.1] w-[100%] text-center font-Common font-bold text-[#3d3d3d] text-[1.8em] mt-4 lg:mt-0'>our specialization<span className='text-[#c5a47e]'>:</span></h2>
+          <h2 className='leading-[1.1] w-[100%] text-center font-Common font-bold text-[#3d3d3d] text-[1.8em] mt-4 lg:mt-0'>our specialization</h2>
           <div className='mt-4 flex flex-col justify-center items-center'>
             <img className='mb-4 w-1/4 py-2' src={img.iconArchitecture} alt="" />
             <p className='text-[1.125em] leading-[1.35] font-bold text-[#3d3d3d] tracking-[0.2em] font-Common'>ARCHITECTURE</p>

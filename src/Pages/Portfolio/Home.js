@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import img from "../../assets/img"
-import { faSoap, faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-export default function Home() {
+import { CgFacebook, CgInstagram } from 'react-icons/cg';
+import { AiOutlineLinkedin } from 'react-icons/ai';
+import { withRouter } from 'react-router-dom';
+export function Home({ history }) {
+
+
 
   return (
     <div className='relative z-0 h-auto'>
@@ -33,9 +38,9 @@ export default function Home() {
         <p className='font-semibold mt-12 text-[16px] lg:text-[18px] text-right'>Concert Hall is the archtiecture of a new generation, a building that exist not only in the dimension of space,
           but also in the dimension of time and communication
         </p>
-        <div className='mt-12 w-[100%] flex justify-end'>
-          <button className=' rounded-3xl  flex flex-row justify-center items-center px-4 py-4 transition-all ease-in-out duration-300 bg-[#c5a47e] hover:bg-[#d5a47e]'>LOOK MORE
-            <FontAwesomeIcon className='  text-[2.4vmin]  mr-[2vmin] opacity-25 ml-2' icon={faArrowRight} />
+        <div className='mt-12 w-[100%] items-center flex justify-end'>
+          <button className=' rounded-3xl   flex flex-row justify-center text-center items-center px-4 py-4 transition-all ease-in-out duration-300 bg-[#c5a47e] hover:bg-[#cb9c67]'>LOOK MORE
+            <FontAwesomeIcon className=' ml-2 text-[2.4vmin]  mr-[2vmin] opacity-25 ' icon={faArrowRight} />
           </button>
         </div>
       </div>
@@ -43,23 +48,23 @@ export default function Home() {
         <div className='flex flex-col justify-center items-center bottom-0 z-10  absolute left-0 w-[100%]'>
           <p className='-rotate-90 mb-20 text-[10px] font-bold whitespace-nowrap uppercase tracking-[1em] font-Common text-[#3d3d3d] '>ZDM OFFICE</p>
           <div className='h-[5vmin] mt-[3.8vmin] w-[1px] bg-[#c5c4c2]' />
-          <FontAwesomeIcon className='hover:text-[#c5a47e] transition-all ease-in-out duration-300 cursor-pointer text-[2.4vmin] text-[#c5c4c2] mt-[3.8vmin]' icon={faSoap} />
-          <FontAwesomeIcon className='hover:text-[#c5a47e] transition-all ease-in-out duration-300 cursor-pointer text-[2.4vmin] text-[#c5c4c2] mt-[3.8vmin]' icon={faSoap} />
-          <FontAwesomeIcon className='hover:text-[#c5a47e] transition-all ease-in-out duration-300 cursor-pointer text-[2.4vmin] text-[#c5c4c2] mt-[3.8vmin]' icon={faSoap} />
-          <FontAwesomeIcon className='hover:text-[#c5a47e] transition-all ease-in-out duration-300 cursor-pointer text-[2.4vmin] text-[#c5c4c2] my-[3.8vmin] ' icon={faSoap} />
+          <AiOutlineLinkedin className='hover:text-[#c5a47e] transition-all ease-in-out duration-300 cursor-pointer text-[2.4vmin] text-[#c5c4c2] mt-[3.8vmin]' />
+          <CgInstagram className='hover:text-[#c5a47e] transition-all ease-in-out duration-300 cursor-pointer text-[2.4vmin] text-[#c5c4c2] mt-[3.8vmin] ' />
+          <CgFacebook className='mb-4 hover:text-[#c5a47e] transition-all ease-in-out duration-300 cursor-pointer text-[2.4vmin] text-[#c5c4c2] mt-[3.8vmin]' />
         </div>
       </div>
       <div className='absolute lg:left-[25%] md:left-[35%] sm:left-[45%] top-[11vmin] w-[60%] flex flex-row justify-between items-center'>
         <p className='font-Common font-light text-[0.75em] tracking-[0.22em] text-[#fff]'>+7 (212) 674-25-10</p>
         <div className=' sm:hidden md:hidden lg:flex flex-row justify-center items-center  font-light text-[0.75em]  cursor-pointer tracking-[0.22em]'>
-          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' href='/'>HOME</a>
-          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' href='/'>ABOUT US</a>
-          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' href='/'>PROJECTS</a>
-          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' href='/'>BLOG</a>
-          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' href='/'>CONTACTS</a>
+          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' onClick={() => { history.push('/') }}>HOME</a>
+          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' onClick={() => { history.push('/AboutUs') }}>ABOUT US</a>
+          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' onClick={() => { history.push('/Projects') }}>PROJECTS</a>
+          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' onClick={() => { history.push('/') }}>PRODUCTS</a>
+          <a className='text-[#fff] mr-[8vmin] hover:text-[#c5a47e] font-Common' onClick={() => { history.push('/Contacts') }}>CONTACTS</a>
         </div>
       </div>
       <img className='w-[100vw]  h-[100vh] left-0 top-0 z-10' src={img.slide1} alt=""></img>
     </div>
   )
 }
+export default withRouter(Home)
